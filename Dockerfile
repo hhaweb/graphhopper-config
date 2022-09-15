@@ -9,4 +9,4 @@ ADD https://github.com/graphhopper/graphhopper/releases/download/5.3/graphhopper
 
 COPY config.yml /app
 
-ENTRYPOINT ["java","-Ddw.graphhopper.datareader.file=malaysia-singapore-brunei-latest.osm.pbf","-jar","graphhopper-web-5.3.jar","server","config.yml"]
+ENTRYPOINT ["java","-Xmx3G","-Ddw.graphhopper.datareader.file=malaysia-singapore-brunei-latest.osm.pbf","-jar","graphhopper-web-5.3.jar","server","config.yml"]
