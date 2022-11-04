@@ -61,7 +61,7 @@ graphhopper:
   
     - name: foot
       vehicle: foot
-      weighting: shortest 
+      weighting: short_fastest  
 
   #  - name: car_with_turn_costs
   #    vehicle: car
